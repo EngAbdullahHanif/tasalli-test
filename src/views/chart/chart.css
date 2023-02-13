@@ -1,0 +1,40 @@
+.blue-board {
+  background-color: rgb(89, 152, 248);
+  width: 100px;
+  height: 70px;
+  /* margin: 20px auto; */
+  display: flex;
+  justify-content: left;
+  align-items: left;
+  text-align: left;
+  font-size: 16px;
+  color: white;
+  position: relative;
+  border: solid 5px yellow;
+  padding-left: 23px;
+}
+.blue-stand {
+  width: 10px;
+  height: 70px;
+  background-color: yellow;
+  position: absolute;
+  bottom: -70px;
+}
+
+.blue-stand.blue-center {
+  left: calc(50% - 5px);
+}
+.line {
+  height: 5px;
+  background-color: yellow;
+  position: absolute;
+  bottom: -27px;
+}
+.line.left-to-center {
+  left: calc(50% - 155px);
+  width: 150px;
+}
+.line.center-to-right {
+  left: calc(50% + 5px);
+  width: 150px;
+}

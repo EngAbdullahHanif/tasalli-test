@@ -1,0 +1,47 @@
+.green-board {
+  background-color: green;
+  width: 350px;
+  height: 200px;
+  margin: 20px auto;
+  display: flex;
+  justify-content: left;
+  align-items: left;
+  text-align: left;
+  font-size: 16px;
+
+  color: white;
+  position: relative;
+  border: solid 5px yellow;
+}
+.stand {
+  width: 10px;
+  height: 90px;
+  background-color: yellow;
+  position: absolute;
+  bottom: -90px;
+}
+.stand.left {
+  left: calc(50% - 160px);
+  transform: rotate(20deg);
+}
+.stand.center {
+  left: calc(50% - 5px);
+}
+.stand.right {
+  left: calc(50% + 150px);
+  transform: rotate(-20deg);
+}
+.line {
+  height: 5px;
+  background-color: yellow;
+  position: absolute;
+  bottom: -27px;
+}
+.line.left-to-center {
+  left: calc(50% - 155px);
+  width: 150px;
+}
+.line.center-to-right {
+  left: calc(50% + 5px);
+  width: 150px;
+}
